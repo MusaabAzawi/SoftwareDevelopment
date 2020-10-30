@@ -1,8 +1,8 @@
 import json
 import socket
 
-sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-sock.bind((socket.gethostname(), 1234))
+sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)	
+sock.bind(("127.0.0.0", 54000))
 sock.listen(5)
 
 print("wait for client response")
